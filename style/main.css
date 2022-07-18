@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #021f3b;
+    --color-secundary: #cf870a;
+    --color-third: #000000;
+    --color-fourt: #0BC8BA;
+    --color-fifth: #FFFFFF;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+/**============Sección Name=============**/
+
+.name {
+    width: 100%;
+    height: 550px;
+    z-index: -10;
+    top: 50px;
+}
+
+.name .name-information {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name .name-information h1 {
+    font-size: 60px;
+    color: var(--color-secundary);
+}
+
+.name .name-information p {
+    font-size: 30px;
+    color: var(--color-fifth);
+}
+
+.name .name-information span {
+    color: var(--color-fourt);
+    font-weight: 600;
+}
+
+.name .name-information h1, p {
+    padding: 10px;
+}
+
+.name .name-avatar{
+    display: none;
+}
+
+/**============Fin Sección Name=============**/
+
+
+/**============Inicio Sección Name=============**/
+
+.about-me {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 14px;
+}
+
+.about-me .profile-picture {
+    width: 260px;
+    height: 300px;
+    border: 6px solid var(--color-fourt);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture--image {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-picture .profile-picture--image img{
+    width: 100%;
+    height: 100%;
+}
+
+.about-me .container-parrafo {
+    width: 100%;
+    margin: auto;
+    padding: 16px 12px 12px 12px;
+}
+
+.about-me .container-parrafo h2{
+    text-align: center;
+    font-size: 40px;
+    color: var(--color-secundary);
+}
+
+.about-me .container-parrafo p{
+    font-size: 20px;
+    text-align: justify;
+    color: var(--color-fifth);
+}
+
+.about-me .container-parrafo h2, p {
+    padding: 10px;
+}
+
+/**============Fin Sección Name=============**/
+
+/**============Mostar Avatar=============**/
+
+@media screen and (min-width: 768px) {
+    .name {
+        height: 760px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .name .name-information {
+        text-align: center;
+    }
+
+    .name .name-avatar{
+        padding: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name .name-avatar img{
+        width: 360px;
+        height: 360px;
+    }
+
+    .container {
+        width: 86%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-direction: column;
+    }
+    
+    .about-me .container-parrafo {
+        width: 60%;
+        margin-top: 90px;
+    }
+
+    .about-me {
+        height: 700px;
+    }
+
+    .about-me .profile-picture {
+        width: 360px;
+        height: 400px;
+        
+    }
+}
+
+/**============Fin Avatar=============**/
