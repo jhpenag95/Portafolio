@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/main.css">
 
+    <!--============Animacion Css=============-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--============iconos=============-->
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 
@@ -57,7 +60,7 @@
     <main>
         <div class="container">
             <section class="name">
-                <div class="name-information" data-aos="fade-right">
+                <div class="name-information" data-aos="fade-right" data-aos="fade-right">
                     <h1>Helver Johan Peña Gordillo</h1>
                     <p>Desarrollador <span>WEB</span> - Front-End</p>
                 </div>
@@ -65,25 +68,64 @@
                     <img src="assets/images/myAvatar.png" alt="">
                 </div>
             </section>
-            <div class="about-me">
-                <div class="profile-picture">
+            <section class="about-me">
+                <div class="profile-picture" data-aos="zoom-in-up">
                     <div class="profile-picture--image">
-                        <img src="assets/images/ProfilePicture.jpg" alt="">
+                        <img src="assets/images/ProfilePicture.jpg" alt="Imgen de perfil">
                     </div>
                 </div>
                 <div class="container-parrafo" data-aos="fade-up" data-aos-duration="1000">
                     <h2>SOBRE MI</h2>
                     <p>
-                      Joven con actitudes proactivas, me guasta estudiar y aprender lo relacionado con el desarrollo web.
-                      Persona amable y dispuesta al mejoramiento continuo. Me gusta trabajar en equipo y compartir mi
-                      conocimiento con las demás personas. En el futuro, me veo como un excelente profesional en el campo del
-                      desarrollo web. También, deseo darle un buen futuro a mi familia.
+                        Joven con actitudes proactivas, me guasta estudiar y aprender lo relacionado con el desarrollo
+                        web.
+                        Persona amable y dispuesta al mejoramiento continuo. Me gusta trabajar en equipo y compartir mi
+                        conocimiento con las demás personas. En el futuro, me veo como un excelente profesional en el
+                        campo del
+                        desarrollo web. También, deseo darle un buen futuro a mi familia.
                     </p>
-                  </div>
-            </div>
+                    <a href="assets/pdf/Hoja de Vida Helver Johan Peña Gordillo.pdf"
+                        download="Hoja de Vida Helver Johan Peña Gordillo"><button class="btn-cv">Descargar
+                            CV</button></a>
+                </div>
+            </section>
+            <section class="portfolio">
+                <h2 data-aos="fade-up" data-aos-duration="3000">PORTAFOLIO</h2>
+                <div class="portfolio-items">
+                    <div class="portfolio-items__images" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <img src="assets/images/ImagenPortafolio.png" alt="imagen primer portafolio">
+                    </div>
+                    <div class="portfolio-items__images" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <img src="assets/images/gym.jpg" alt="imagen página Gym">
+                    </div>
+                    <div class="portfolio-items__images" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <img src="assets/images/Google.png" alt="Proyecto página google">
+                    </div>
+                    <div class="portfolio-items__images" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <img src="assets/images/Cover.png" alt="Proyecto magina astronauta">
+                    </div>
+                    <div class="portfolio-items__images" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <img src="assets/images/ColegioApp.png" alt="Página colegio">
+                    </div>
+                </div>
+            </section>
+            <section class="technologies">
+                
+            </section>
         </div>
     </main>
 </body>
 <script src="script/menu.js"></script>
+
+<!--===========Script página animación================-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
