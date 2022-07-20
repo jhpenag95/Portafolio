@@ -8,6 +8,7 @@
 :root {
     --color-primary: #021f3b;
     --color-secundary: #C97F00;
+    --color-fifth: #FFFFFF;
 }
 
 body {
@@ -47,7 +48,6 @@ body {
 
 .main-menu--show {
     transform: translateY(0);
-    
 }
 
 .toggle-menu {
@@ -67,6 +67,10 @@ body {
     .main-menu {
         flex-direction: row;
         transform: translateY(0);
+    }
+
+    .main-menu__link:hover {
+        color: var(--color-fifth);
     }
 }
 @media screen and (min-width: 768px) {

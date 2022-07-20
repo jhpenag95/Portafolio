@@ -36,7 +36,8 @@
     <header>
         <nav class="main-nav">
             <div id="toggle-menu" class="toggle-menu">
-                <box-icon name='menu'></box-icon>
+                <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU9JREFUSEu1VlEWwjAIA+9/5tUHZQNKWOuH+9B1o4SSBGX618VENIjka37aYsQHEVxjLNBimIZsK1cMnQB2+faY6MFHgWBvTMabE2ScpdJNEQEnV/FD0o6+1MjSlsgHACtUlPbmliYOJHaM4bzJXYmYgpDn/trvmDnsYNLVrRxRxXWN8ZbU2yIKYuJYhCjx8zHoGZkAbqis26JhICt7lFWssp4AwAeqcZAbi74DSEbrKwUe88MCkldvJZleSnJmV1dLrx+SCweR5MTBxLlVhAW0AVZSF4DO/9gfYn2fP6+eRE7ez6WTlFkGzbCLSuzIL5ps5ZteVCdnFtVcVmQh3zjI5l3GdevkKYF1Rjy77zKYo5O9mG4wTrs/Zjwb0a0PMMoJsX1MS7KXjrW1FoPHeGpR1PhJ1eC8ZRv6ydwMOCBOZentD8BmXAGSMUrOYz37Aqc4rSFm8nfpAAAAAElFTkSuQmCC"/> -->
+                <box-icon name='menu' flip='vertical' color='#ffffff' ></box-icon>
             </div>
             <ul id="main-menu" class="main-menu">
                 <li class="main-menu__item">
@@ -74,7 +75,7 @@
                         <img src="assets/images/ProfilePicture.jpg" alt="Imgen de perfil">
                     </div>
                 </div>
-                <div class="container-parrafo" data-aos="fade-up" data-aos-duration="1000">
+                <div class="container-parrafo" data-aos="zoom-in-left">
                     <h2>SOBRE MI</h2>
                     <p>
                         Joven con actitudes proactivas, me guasta estudiar y aprender lo relacionado con el desarrollo
@@ -85,13 +86,18 @@
                         desarrollo web. También, deseo darle un buen futuro a mi familia.
                     </p>
                     <a href="assets/pdf/Hoja de Vida Helver Johan Peña Gordillo.pdf"
-                        download="Hoja de Vida Helver Johan Peña Gordillo"><button class="btn-cv">Descargar
+                        download="Hoja de Vida Helver Johan Peña Gordillo" data-aos="fade-up"
+                        data-aos-duration="3000"><button class="btn-cv">Descargar
                             CV</button></a>
                 </div>
             </section>
             <section class="portfolio">
-                <h2 data-aos="fade-up" data-aos-duration="3000">PORTAFOLIO</h2>
+                <h2 data-aos="fade-up" data-aos="fade-down">PORTAFOLIO</h2>
                 <div class="portfolio-items">
+                    <div class="portfolio-items__images" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <img src="assets/images/Bitcoin.svg" alt="imagen primer Bitcoin">
+                    </div>
                     <div class="portfolio-items__images" data-aos="fade-right" data-aos-offset="300"
                         data-aos-easing="ease-in-sine">
                         <img src="assets/images/ImagenPortafolio.png" alt="imagen primer portafolio">
@@ -111,11 +117,40 @@
                     <div class="portfolio-items__images" data-aos="fade-right" data-aos-offset="300"
                         data-aos-easing="ease-in-sine">
                         <img src="assets/images/ColegioApp.png" alt="Página colegio">
-                    </div>
+                    </div>                    
                 </div>
             </section>
             <section class="technologies">
-                
+                <h2>TÉCONOLOGIAS</h2>
+                <div class="technologies-container">
+                    <div class="technologies-container--items" data-aos="fade-right">
+                        <img src="assets/icons/html_original.png" alt="imagen lenguaje html">
+                    </div>
+                    <div class="technologies-container--items" data-aos="fade-right">
+                        <img src="assets/icons/css_original.png" alt="imagen lenguaje css">
+                    </div>
+                    <div class="technologies-container--items" data-aos="fade-right">
+                        <img src="assets/icons/javascript.png" alt="imagen lenguaje javascript">
+                    </div>
+                    <div class="technologies-container--items" data-aos="fade-right">
+                        <img src="assets/icons/bootstrap.png" alt="imagen lenguaje bootstrap">
+                    </div>
+                    <div class="technologies-container--items" data-aos="fade-left">
+                        <img src="assets/icons/php.png" alt="imagen lenguaje php">
+                    </div>
+                    <div class="technologies-container--items" data-aos="fade-left">
+                        <img src="assets/icons/firebase.png" alt="imagen lenguaje firebase">
+                    </div>
+                    <div class="technologies-container--items" data-aos="fade-left">
+                        <img src="assets/icons/mysql.png" alt="imagen lenguaje mysql">
+                    </div>
+                    <div class="technologies-container--items" data-aos="fade-left">
+                        <img src="assets/icons/git.png" alt="imagen lenguaje git">
+                    </div>
+                    <div class="technologies-container--items" data-aos="fade-left">
+                        <img src="assets/icons/azure-devops.png" alt="imagen lenguaje azure-devops">
+                    </div>
+                </div>
             </section>
         </div>
     </main>
