@@ -16,6 +16,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+header {
+    position: relative;
+    z-index: 1;
+}
+
 .main-menu {
     list-style: none;
     margin-top: 0;
@@ -26,7 +31,7 @@ body {
     background-color: rgba(0, 57, 97, 0.97);
     align-items: center;
     transform: translateY(-100%);
-    transition: transform 0.3s;
+    transition: transform 0.4s;
     position: relative;
     width: 100%;
 }
