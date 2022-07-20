@@ -69,30 +69,58 @@
     </header>
     <main>
         <section class="formInfo">
-            <div class="container d-flex justify-content-center align-items-center">
-                <div class="row" data-aos="fade-up"
-                data-aos-anchor-placement="top-center">
-                    <div class="title-form">
-                        <h2 class="m-2 p-2 text-center">CONTÁCTAME</h2>
+            <div class="container d-flex flex-column justify-content-center align-items-center">
+                <div class="row w-75">
+                    <div class="col">
+                        <div class="location">
+                            <div class="iconInfo">
+                                <div class="icons-location">
+                                    <img src="../assets/icons/placeholder.png" alt="imagen ubicación"> 
+                                </div>
+                                <div class="text-location"><p>Calle 70 # 112b - 93 Engativá</p></div>
+                            </div>
+                            <div class="iconInfo">
+                                <div class="icons-location">
+                                    <img src="../assets/icons/correo.png" alt="imagen ubicación"> 
+                                </div>
+                                <div class="text-location"><p>helver248@hotmail.es</p></div>
+                            </div>
+                            <div class="iconInfo">
+                                <div class="icons-location">
+                                    <img src="../assets/icons/call.png" alt="imagen ubicación"> 
+                                </div>
+                                <div class="text-location"><p>305 816 2244</p></div>
+                            </div>
+                        </div>
                     </div>
-                    <form id="form">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp"
-                                placeholder="Nombre" required>
+                    <div class="col">
+                        <div class="row" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                            <div class="title-form">
+                                <h2 class="m-2 p-2 text-center">CONTÁCTAME</h2>
+                            </div>
+                            <form id="form">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        aria-describedby="emailHelp" placeholder="Nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        aria-describedby="emailHelp" placeholder="Correo Eléctronico" required>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" name="message"
+                                        id="message" style="height: 100px" required></textarea>
+                                    <label for="floatingTextarea2">Mensaje</label>
+                                </div>
+                                <input type="submit" id="button" value="Enviar Mensaje" class="btn btn-primary mt-3"
+                                    data-aos="fade-left">
+                            </form>
                         </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" id="email" name="email"
-                                aria-describedby="emailHelp" placeholder="Correo Eléctronico" required>
-                        </div>
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" name="message"
-                                id="message" style="height: 100px" required></textarea>
-                            <label for="floatingTextarea2">Mensaje</label>
-                        </div>
-                        <input type="submit" id="button" value="Enviar Mensaje" class="btn btn-primary mt-3" data-aos="fade-left">
-                    </form>
+                    </div>
                 </div>
             </div>
+
+
         </section>
 
     </main>

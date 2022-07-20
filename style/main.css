@@ -5,17 +5,24 @@
 }
 
 :root {
-    --color-primary: #021f3b;
+    --color-primary: #FFFFFF;
     --color-secundary: #cf870a;
     --color-third: #000000;
     --color-fourt: #0BC8BA;
-    --color-fifth: #FFFFFF;
+    --color-fifth: #021f3b;
+    --color-sexty: rgb(187, 238, 243)F;
+
 }
 
 body {
     font-family: 'Fira Sans', sans-serif;
     min-width: 300px;
     margin: auto;
+    background-color: #5a7872d2;
+    background-image: url("../assets/images/wolf.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h2 {
@@ -37,6 +44,9 @@ main {
 
 .container {
     position: relative;
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
 
@@ -44,8 +54,6 @@ main {
     width: 100%;
     height: 700px;
     position: relative;
-    z-index: -10;
-    top: 50px;
 }
 
 .name .name-information {
@@ -285,7 +293,7 @@ p {
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 86%;
+        width: 60%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -344,7 +352,7 @@ p {
         height: 800px;
     }
 
-    
+
     .portfolio .portfolio-items {
         width: 100%;
         display: grid;
@@ -365,16 +373,18 @@ p {
         margin: 16px;
     }
 
-    .technologies-container .technologies-container--items{
+    .technologies-container .technologies-container--items {
         margin: auto;
     }
 
-    
+
 }
 
 @media screen and (min-width: 1000px) {
     .name {
         height: 1000px;
+        position: relative;
+        top: 200px;
     }
 
     .name .name-avatar img {
@@ -388,7 +398,8 @@ p {
         font-size: 68px;
     }
 
-    .name .name-information h1, p {
+    .name .name-information h1,
+    p {
         width: 500px;
         margin: 26px;
     }
@@ -398,13 +409,13 @@ p {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    
+
     .about-me .profile-picture {
         width: 400px;
         height: 500px;
         margin: auto auto;
     }
-    
+
     .portfolio {
         width: 100%;
         height: 1000px;
@@ -417,8 +428,8 @@ p {
     }
 
     .portfolio .portfolio-items .portfolio-items__images {
-        width: 400px;
-        height: 300px;
+        width: 340px;
+        height: 240px;
     }
 
     .technologies-container {
@@ -426,8 +437,8 @@ p {
     }
 
     .technologies-container--items {
-        width: 200px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
         padding: 12px;
     }
 }
