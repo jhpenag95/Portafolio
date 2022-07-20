@@ -28,7 +28,7 @@ h2 {
 main {
     position: relative;
     top: -270px;
-    max-width: 320px;
+    min-width: 300px;
 }
 
 /**============Sección Name=============**/
