@@ -1,0 +1,46 @@
+/**=============formulario=========================**/
+
+* {
+    overflow: hidden;
+}
+
+:root {
+    --color-primary: #021f3b;
+    --color-secundary: #cf870a;
+    --color-third: #000000;
+    --color-fourt: #0BC8BA;
+    --color-fifth: #FFFFFF;
+    --colo-nav: #003860;
+}
+
+body {
+    background-color: var(--color-primary) !important;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-secundary);
+}
+
+nav {
+    background-color: var(--colo-nav) !important;
+}
+
+.container {
+    height: 100vh;
+}
+
+.title-form {
+    width: 90%;
+}
+
+form input {
+    background-color: var(--color-primary) !important;
+}
+
+form .btn:hover  {
+    color: var(--color-secundary);
+}
