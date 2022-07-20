@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 :root {
@@ -36,7 +37,6 @@ h2 {
 
 main {
     position: relative;
-    top: -270px;
     min-width: 300px;
 }
 
@@ -384,7 +384,7 @@ p {
     .name {
         height: 1000px;
         position: relative;
-        top: 200px;
+        top: -80px;
     }
 
     .name .name-avatar img {
