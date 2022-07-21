@@ -31,37 +31,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
 
+    <!--============boostraps=============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
 <body>
     <header>
-        <nav class="main-nav">
-            <div id="toggle-menu" class="toggle-menu">
-                <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU9JREFUSEu1VlEWwjAIA+9/5tUHZQNKWOuH+9B1o4SSBGX618VENIjka37aYsQHEVxjLNBimIZsK1cMnQB2+faY6MFHgWBvTMabE2ScpdJNEQEnV/FD0o6+1MjSlsgHACtUlPbmliYOJHaM4bzJXYmYgpDn/trvmDnsYNLVrRxRxXWN8ZbU2yIKYuJYhCjx8zHoGZkAbqis26JhICt7lFWssp4AwAeqcZAbi74DSEbrKwUe88MCkldvJZleSnJmV1dLrx+SCweR5MTBxLlVhAW0AVZSF4DO/9gfYn2fP6+eRE7ez6WTlFkGzbCLSuzIL5ps5ZteVCdnFtVcVmQh3zjI5l3GdevkKYF1Rjy77zKYo5O9mG4wTrs/Zjwb0a0PMMoJsX1MS7KXjrW1FoPHeGpR1PhJ1eC8ZRv6ydwMOCBOZentD8BmXAGSMUrOYz37Aqc4rSFm8nfpAAAAAElFTkSuQmCC"/> -->
-                <box-icon name='menu' flip='vertical' color='#ffffff' ></box-icon>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../assets/icons/Logo.jpg" alt="" width="30" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="main-menu__item">
+                            <a href="#name" class="main-menu__link">Home</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#about-me" class="main-menu__link">Sobre Mi</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#portfolio" class="main-menu__link">Portafolio</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#technologies" class="main-menu__link">Tecnología</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Certificados</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="views/form.html" class="main-menu__link">Contáctame</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul id="main-menu" class="main-menu">
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link">Home</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link">Sobre Mi</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link">Portafolio</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link">Tecnología</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="views/form.html" class="main-menu__link">Contactame</a>
-                </li>
-            </ul>
         </nav>
     </header>
     <main>
         <div class="container">
-            <section class="name">
+            <section class="name" id="name">
                 <div class="name-information" data-aos="fade-right" data-aos="fade-right">
                     <h1>Helver Johan Peña Gordillo</h1>
                     <p>Desarrollador <span>WEB</span> - Front-End</p>
@@ -70,7 +84,7 @@
                     <img src="assets/images/myAvatar.png" alt="">
                 </div>
             </section>
-            <section class="about-me">
+            <section class="about-me" id="about-me">
                 <div class="profile-picture" data-aos="zoom-in-up">
                     <div class="profile-picture--image">
                         <img src="assets/images/ProfilePicture.jpg" alt="Imgen de perfil">
@@ -92,7 +106,7 @@
                             CV</button></a>
                 </div>
             </section>
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <h2 data-aos="fade-up" data-aos="fade-down">PORTAFOLIO</h2>
                 <div class="portfolio-items">
                     <div class="portfolio-items__images" data-aos="fade-right" data-aos-offset="300"
@@ -118,10 +132,10 @@
                     <div class="portfolio-items__images" data-aos="fade-right" data-aos-offset="300"
                         data-aos-easing="ease-in-sine">
                         <img src="assets/images/ColegioApp.png" alt="Página colegio">
-                    </div>                    
+                    </div>
                 </div>
             </section>
-            <section class="technologies">
+            <section class="technologies" id="technologies">
                 <h2>TÉCONOLOGIAS</h2>
                 <div class="technologies-container">
                     <div class="technologies-container--items" data-aos="fade-right">
@@ -164,7 +178,16 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
-    iuytrew
 </script>
+
+
+<!--===========Scripts boostrasp================-->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 
 </html>
