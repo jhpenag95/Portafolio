@@ -160,6 +160,20 @@ form .btn:hover {
     color: var(--color-secundary);
 }
 
+
+@media screen and (min-width: 400px) {
+    .row-form {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+}
+
+
 @media screen and (min-width: 700px) {
     .container {
         display: flex;
