@@ -215,6 +215,23 @@ p {
 }
 
 
+.btn-validate {
+    width: 100px;
+    height: 40px;
+    top: 204px;
+    left: 110px;
+    margin: auto;
+}
+
+.btn-validate img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+
+
+
 /**============Fin Portafolio=============**/
 
 /**============Inicio madia técnologia=============**/
