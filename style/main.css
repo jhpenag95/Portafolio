@@ -272,18 +272,18 @@ p {
 /**============Inicio madia footer=============**/
 footer {
     width: 100%;
-    height: 200px;
-    background-color: #021f3b;
+    height: 500px;
+    background-color: var(--color-fifth);
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 footer .cont{
     width: 100%;
-    height: 120px;
+    height: auto;
     padding: 14px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -291,7 +291,8 @@ footer .cont{
 
 .cont .logo-footer--item {
     width: 446px;
-    height: 100px;
+    height: 133px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -299,12 +300,12 @@ footer .cont{
 
 .cont .logo-footer--item img{
     width: 200px;
-    height: 100px;
+    height: 133px;
 }
 
 .cont .copy-footer {
     width: 446px;
-    height: 100px;
+    height: 133px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -317,6 +318,11 @@ footer .cont{
     align-items: center;
     justify-content: space-between;
 }
+
+.cont .copy-footer p {
+    font-size: 12px;
+}
+
 
 .cont .red-footer a{
     width: 60px;
@@ -522,3 +528,65 @@ footer .cont{
 }
 
 /**============Fin Portafolio=============**/
+
+
+@media screen and (min-width: 800px) {
+    
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: var(--color-fifth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .cont{
+    width: 100%;
+    height: 120px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.cont .logo-footer--item {
+    width: 446px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont .logo-footer--item img{
+    width: 200px;
+    height: 100px;
+}
+
+.cont .copy-footer {
+    width: 446px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont .red-footer {
+    width: 446px;
+    height: 100px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont .red-footer a{
+    width: 60px;
+    padding: 12px;
+}
+
+.cont .red-footer a img{
+    width: 100%;
+}
+}
+
