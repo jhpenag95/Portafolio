@@ -210,10 +210,16 @@ p {
     box-shadow: inset 5em 1em var(--color-fourt);
 }
 
+.portfolio .portfolio-items .portfolio-items__images button{
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
 
 .portfolio .portfolio-items .portfolio-items__images img {
     width: 100%;
     height: 200px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 
@@ -229,6 +235,15 @@ p {
     width: 40px;
     height: 40px;
     border-radius: 100%;
+}
+
+.modal-header h5 {
+    font-size: 26px;
+    color: #021f3b;
+}
+
+.modal-footer button {
+    background-color: var(--color-fifth);
 }
 
 
@@ -278,7 +293,7 @@ footer {
     align-items: center;
 }
 
-footer .cont{
+footer .cont {
     width: 100%;
     height: auto;
     padding: 14px;
@@ -298,7 +313,7 @@ footer .cont{
     justify-content: center;
 }
 
-.cont .logo-footer--item img{
+.cont .logo-footer--item img {
     width: 200px;
     height: 133px;
 }
@@ -310,8 +325,9 @@ footer .cont{
     align-items: center;
     justify-content: center;
 }
+
 .cont .red-footer {
-    width: 446px;
+    width: 90%;
     height: 100px;
     padding: 16px;
     display: flex;
@@ -324,12 +340,12 @@ footer .cont{
 }
 
 
-.cont .red-footer a{
+.cont .red-footer a {
     width: 60px;
     padding: 12px;
 }
 
-.cont .red-footer a img{
+.cont .red-footer a img {
     width: 100%;
 }
 
@@ -457,10 +473,7 @@ footer .cont{
         margin: 16px;
     }
 
-    .technologies-container .technologies-container--items {
-        margin: auto;
-    }
-
+    
 
 }
 
@@ -530,63 +543,96 @@ footer .cont{
 /**============Fin Portafolio=============**/
 
 
-@media screen and (min-width: 800px) {
-    
-footer {
-    width: 100%;
-    height: 400px;
-    background-color: var(--color-fifth);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media screen and (min-width: 700px) {
+    footer {
+        width: 100%;
+        height: 240px;
+    }
+
+    footer .cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .cont .logo-footer--item {
+        width: 224px;
+        height: 100px;
+    }
+
+    footer .cont .logo-footer--item img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cont .copy-footer {
+        width: 233px;
+        height: 133px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cont .red-footer {
+        width: 233px;
+        height: 100px;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cont .red-footer a {
+        width: 49px;
+        padding: 12px;
+    }
 }
 
-footer .cont{
-    width: 100%;
-    height: 120px;
-    padding: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+@media screen and (min-width: 700px) {
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .cont {
+        width: 700px;
+    }
+
 }
 
 
-.cont .logo-footer--item {
-    width: 446px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+@media screen and (min-width: 1000px) {
 
-.cont .logo-footer--item img{
-    width: 200px;
-    height: 100px;
-}
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.cont .copy-footer {
-    width: 446px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cont .red-footer {
-    width: 446px;
-    height: 100px;
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    footer .cont {
+        width: 1000px;
+    }
 
-.cont .red-footer a{
-    width: 60px;
-    padding: 12px;
-}
+    footer .cont .logo-footer--item {
+        width: 220px;
+    }
 
-.cont .red-footer a img{
-    width: 100%;
-}
-}
+    .cont .copy-footer {
+        width: 333px;
+    }
 
+    .cont .copy-footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+    .cont .red-footer {
+        width: 333px;
+    }
+
+
+}
