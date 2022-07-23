@@ -30,6 +30,14 @@ header .navbar {
     padding: 1em;
 }
 
+.main-menu__item a {
+    transition: all 1s;
+}
+
+.main-menu__item a:hover {
+    color: #FFFFFF;
+}
+
 .navbar-toggler {
     background-color: #FFFFFF !important;
 }
