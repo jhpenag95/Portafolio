@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 :root {
@@ -14,6 +15,8 @@
     --colo-nav: #003860;
     --color-fifth2: #021f3b;
 }
+
+
 
 nav {
     background-color: var(--colo-nav) !important;
